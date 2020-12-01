@@ -28,7 +28,7 @@ const positions = [
   {
     company: 'In-Depth',
     position: 'Mobile Software Engineer ',
-    link: 'http://in-depth-inc.com',
+    link: 'https://in-depth-inc.com',
     location: 'San Francisco, USA',
     daterange: 'February 2016 - March 2016',
     description:
