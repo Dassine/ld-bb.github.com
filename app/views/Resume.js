@@ -13,7 +13,13 @@ import degrees from '../data/resume/degrees';
 import positions from '../data/resume/positions';
 import { skills, categories } from '../data/resume/skills';
 
-const sections = ['Experience', 'Education', 'Skills', 'References'];
+const sections = [
+  'Experience',
+  'Education',
+  'Skills',
+  'References',
+  'Download PDF version',
+];
 
 const Resume = () => (
   <Main>
@@ -27,7 +33,16 @@ const Resume = () => (
           <div className="link-container">
             {sections.map((sec) => (
               <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+                <a
+                  href={
+                    sec === 'Download PDF version'
+                      ? '/pdf/Lilia Dassine Belaïd Bründler 2020.pdf'
+                      : `#${sec.toLowerCase()}`
+                  }
+                  download
+                >
+                  {sec}
+                </a>
               </h4>
             ))}
           </div>
