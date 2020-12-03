@@ -147,7 +147,17 @@ export const skills = [
   },
   {
     title: 'PhotoShop',
-    compentency: 3,
+    compentency: 4,
+    category: ['UI/UX Design'],
+  },
+  {
+    title: 'Figma',
+    compentency: 4,
+    category: ['UI/UX Design'],
+  },
+  {
+    title: 'Zeplin',
+    compentency: 4,
     category: ['UI/UX Design'],
   },
   {
