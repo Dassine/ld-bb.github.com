@@ -21,10 +21,10 @@ const Nav = () => (
 
     <section id="footer">
       <ul className="icons">
-        {data.map((s) => (
-          <li key={s.label}>
-            <a href={s.link}>
-              <FontAwesomeIcon icon={s.icon} />
+        {data.map((contact) => (
+          <li key={contact.label}>
+            <a href={contact.link} target="_blank">
+              <FontAwesomeIcon icon={contact.icon} />
             </a>
           </li>
         ))}

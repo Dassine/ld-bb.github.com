@@ -2,7 +2,6 @@ const positions = [
   {
     company: 'Self-Employed',
     position: 'Mobile Engineer',
-    link: 'https://arthena.com',
     location: 'Remote',
     daterange: 'April 2017 - Present',
     description:
@@ -19,7 +18,7 @@ const positions = [
   {
     company: 'Keaton Row',
     position: 'Mobile Engineer',
-    link: 'https://keatonrow.com',
+    link: 'https://www.crunchbase.com/organization/keaton-row',
     location: 'San Francisco, USA',
     daterange: 'April 2015 - April 2017',
     description:
@@ -28,7 +27,7 @@ const positions = [
   {
     company: 'In-Depth',
     position: 'Mobile Software Engineer ',
-    link: 'https://in-depth-inc.com',
+    link: 'https://angel.co/company/in-depth-inc',
     location: 'San Francisco, USA',
     daterange: 'February 2016 - March 2016',
     description:
