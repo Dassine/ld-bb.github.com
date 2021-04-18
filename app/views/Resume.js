@@ -36,7 +36,7 @@ const Resume = () => (
                 <a
                   href={
                     sec === 'Download PDF version'
-                      ? '/pdf/Lilia Dassine Belaïd Bründler 2020.pdf'
+                      ? '/pdf/Lilia Dassine Belaïd Bründler 2021.pdf'
                       : `#${sec.toLowerCase()}`
                   }
                   download
