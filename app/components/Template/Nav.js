@@ -14,7 +14,7 @@ const Nav = () => (
       <header>
         <h2>Lilia Dassine Belaïd Bründler</h2>
         <p>
-          <a href="mailto:contact@dalibel.com">contact@dalibel.com</a>
+          <a href="mailto:contact@ld-bb.dev">contact@ld-bb.dev</a>
         </p>
       </header>
     </section>
@@ -30,7 +30,7 @@ const Nav = () => (
         ))}
       </ul>
       <p className="copyright">
-        &copy; Lilia Dassine Belaïd Bründler <Link to="/">dalibel.com</Link>.
+        &copy; Lilia Dassine Belaïd Bründler <Link to="/">ld-bb.dev</Link>.
       </p>
     </section>
   </section>

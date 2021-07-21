@@ -39,6 +39,6 @@ script:
   - npm test
 notifications:
   email:
-    - contact@dalibel.com
+    - contact@ld-bb.dev
 git:
   depth: 10

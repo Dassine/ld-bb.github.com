@@ -94,8 +94,8 @@ const Contact = () => {
         <div className="email-at">
           <p>Feel free to get in touch. You can email me at: </p>
           <div className="inline-container">
-            <a href={`mailto:contact@dalibel.com`}>
-              <span>contact@dalibel.com</span>
+            <a href={`mailto:contact@ld-bb.dev`}>
+              <span>contact@ld-bb.dev</span>
             </a>
           </div>
         </div>

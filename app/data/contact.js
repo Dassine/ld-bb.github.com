@@ -20,7 +20,7 @@ const data = [
     icon: faAngellist,
   },
   {
-    link: 'mailto:contact@dalibel.com',
+    link: 'mailto:contact@ld-bb.dev',
     label: 'Email',
     icon: faEnvelope,
   },
