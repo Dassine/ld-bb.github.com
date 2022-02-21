@@ -33,7 +33,10 @@ const Index = () => (
       <p>
         {' '}
         Source available{' '}
-        <a href="https://github.com/Dassine/dassine.github.com" target="_blank">
+        <a
+          href="https://github.com/Dassine/ld-bb.github.com/tree/2nd-version"
+          target="_blank"
+        >
           here
         </a>
         .

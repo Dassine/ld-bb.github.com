@@ -31,15 +31,15 @@ const Resume = () => (
             <Link to="resume">Resume</Link>
           </h2>
           <div className="link-container">
-            {sections.map((sec) => (
+            {sections.map((sec, index) => (
               <h4 key={sec}>
                 <a
                   href={
-                    sec === 'Download PDF version'
-                      ? '/pdf/Lilia Dassine Belaïd Bründler 2021.pdf'
+                    index === 4
+                      ? '/pdf/Lilia Dassine Belaïd Bründler 2022.pdf'
                       : `#${sec.toLowerCase()}`
                   }
-                  download
+                  download={index === 4}
                 >
                   {sec}
                 </a>
