@@ -18,19 +18,19 @@ const data = [
     label: 'Stars this repository has on github',
     key: 'stargazers_count',
     value: '0',
-    link: 'https://github.com/Dassine/dassine.github.com/stargazers',
+    link: 'https://github.com/Dassine/ld-bb.github.com/stargazers',
   },
   {
     label: 'Number of people watching this repository',
     key: 'subscribers_count',
     value: '1',
-    link: 'https://github.com/Dassine/dassine.github.com/stargazers',
+    link: 'https://github.com/Dassine/ld-bb.github.com/stargazers',
   },
   {
     label: 'Number of forks',
     key: 'forks',
     value: '0',
-    link: 'https://github.com/Dassine/dassine.github.com/network',
+    link: 'https://github.com/Dassine/ld-bb.github.com/network',
   },
   {
     label: 'Number of spoons',
@@ -46,20 +46,20 @@ const data = [
     label: 'Open github issues',
     key: 'open_issues_count',
     value: '0',
-    link: 'https://github.com/Dassine/dassine.github.com/issues',
+    link: 'https://github.com/Dassine/ld-bb.github.com/issues',
   },
   {
     label: 'Last updated at',
     key: 'pushed_at',
     value: dayjs().format('MMMM D, YYYY'),
-    link: 'https://github.com/Dassine/dassine.github.com/commits',
+    link: 'https://github.com/Dassine/ld-bb.github.com/commits',
   },
   {
     /* find . | grep ".js" | grep -vE ".min.js|node_modules|.git|.json" |
     xargs -I file cat file | wc -l */
     label: 'Lines of Javascript powering this website',
     value: '2625',
-    link: 'https://github.com/Dassine/dassine.github.com/graphs/contributors',
+    link: 'https://github.com/Dassine/ld-bb.github.com/graphs/contributors',
   },
 ];
 

@@ -5,7 +5,7 @@ You may wish to fork this repository or remove my remote origin and add your own
 1. To download the repository and install dependencies, run the following commands:
 
 ```bash
-git clone git@github.com:Dassine/dassine.github.com.git
+git clone git@github.com:Dassine/ld-bb.github.com.git
 cd personal-site
 yarn
 ```
