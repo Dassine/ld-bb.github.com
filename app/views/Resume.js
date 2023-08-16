@@ -36,7 +36,7 @@ const Resume = () => (
                 <a
                   href={
                     index === 4
-                      ? '/pdf/Lilia Dassine Belaïd Bründler 2022.pdf'
+                      ? '/pdf/Lilia Dassine Belaïd Bründler 2023.pdf'
                       : `#${sec.toLowerCase()}`
                   }
                   download={index === 4}
