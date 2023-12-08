@@ -11,7 +11,9 @@ const Nav = () => (
       <Link to="/" className="logo">
         <img src={`${BASE_PATH}/images/me_icon.jpg`} alt="" />
       </Link>
-      <h2>Lilia Dassine Belaïd Bründler</h2>
+      <h2>
+        Lilia Dassine <br /> Belaïd Bründler
+      </h2>
       <p>
         <a href="mailto:contact@ld-bb.dev">contact@ld-bb.dev</a>
       </p>
