@@ -11,12 +11,10 @@ const Nav = () => (
       <Link to="/" className="logo">
         <img src={`${BASE_PATH}/images/me_icon.jpg`} alt="" />
       </Link>
-      <header>
-        <h2>Lilia Dassine Belaïd Bründler</h2>
-        <p>
-          <a href="mailto:contact@ld-bb.dev">contact@ld-bb.dev</a>
-        </p>
-      </header>
+      <h2>Lilia Dassine Belaïd Bründler</h2>
+      <p>
+        <a href="mailto:contact@ld-bb.dev">contact@ld-bb.dev</a>
+      </p>
     </section>
 
     <section id="footer">
