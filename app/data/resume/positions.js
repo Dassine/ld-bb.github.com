@@ -7,6 +7,7 @@ const positions = [
     description:
       'Helped many startups around the world designing, implementing and submitting their Swift, Objective-C React-Native, React Apps and MVPs. And also acted as fullStack, team lead and CTO.',
     points: [
+      `For Stealth Startup - Lucerne, Switzerland: Building a web/mobile platform - Flutter/Dart`,
       `For Roo - San Francisco, USA: Building from scratch the mobile version of the Roo.vet platform - TypeScript/React-Native`,
       `For Storey - San Francisco, USA: Refactored all the code base of the StoreyApp, built the Android version and new features.`,
       `For Gameloft/FreshPlanet  -  Montreal, Canada/NYC, USA: Leading a mobile team of React Native developers. Maintained and implemented different features for SongPopLive  (2020 Webby Award, People's Voice Winner, Games/Puzzle  category)  Music and  prototyped the Generic Trivia version of SongPop Live game app. Creating some features of SongPop3 the future generation of the successful Music Trivia Game SongPop2  for iOS and Android- React Native/Graphql`,
