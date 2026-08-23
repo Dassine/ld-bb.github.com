@@ -330,19 +330,37 @@ ol {
 }
 
 .hero-portrait {
+  position: relative;
   margin: 0;
   justify-self: end;
-  width: min(100%, 380px);
+  width: min(100%, 300px);
 }
 
-.hero-portrait img {
+.hero-portrait::before {
+  content: "";
+  position: absolute;
+  inset: -0.7rem -1rem 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.portrait-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  border-radius: 999px;
+  background: #1a1410;
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(246, 239, 230, 0.08);
+}
+
+.portrait-frame img {
   width: 100%;
-  aspect-ratio: 1;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 18%;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  box-shadow: 0 0 0 12px rgba(224, 138, 90, 0.08);
 }
 
 /* About */
@@ -660,7 +678,7 @@ ol {
   .hero-portrait {
     order: -1;
     justify-self: start;
-    width: min(220px, 58vw);
+    width: min(180px, 46vw);
   }
 
   .hero {
