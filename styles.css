@@ -530,11 +530,17 @@ ol {
 }
 
 .ref-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 0;
   list-style: none;
+}
+
+.ref-grid li {
+  width: calc(20% - 0.8rem);
+  min-width: 7.5rem;
 }
 
 .ref-grid a {
@@ -666,8 +672,8 @@ ol {
     gap: 0.45rem;
   }
 
-  .ref-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .ref-grid li {
+    width: calc(33.333% - 0.75rem);
   }
 }
 
@@ -680,8 +686,8 @@ ol {
     font-size: 2.7rem;
   }
 
-  .ref-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .ref-grid li {
+    width: calc(50% - 0.5rem);
   }
 
   .contact-list li {
