@@ -305,30 +305,6 @@ ol {
   color: var(--ink);
 }
 
-.places {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 1.1rem;
-  margin-top: 2.4rem;
-  padding: 0;
-  list-style: none;
-  color: var(--faint);
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.places li {
-  position: relative;
-}
-
-.places li:not(:last-child)::after {
-  content: "·";
-  position: absolute;
-  right: -0.7rem;
-  color: var(--accent);
-}
-
 .hero-portrait {
   position: relative;
   margin: 0;
@@ -410,6 +386,10 @@ ol {
 .work-card h3 {
   margin: 0.35rem 0 0.75rem;
   font-size: 1.55rem;
+}
+
+.work-card h3 a {
+  text-decoration: none;
 }
 
 .work-card p {
@@ -547,41 +527,52 @@ ol {
   color: var(--muted);
 }
 
-.ref-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+.quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.ref-grid li {
-  width: calc(20% - 0.8rem);
-  min-width: 7.5rem;
+.quotes blockquote {
+  height: 100%;
+  margin: 0;
+  padding: 1.45rem 1.4rem 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  background: var(--bg-soft);
 }
 
-.ref-grid a {
+.quotes p {
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-style: italic;
+  font-weight: 480;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.quotes footer {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.15rem;
+  margin-top: 1.15rem;
+}
+
+.quotes cite {
+  font-style: normal;
+  font-family: var(--sans);
+  font-weight: 550;
+}
+
+.quotes cite a {
   text-decoration: none;
 }
 
-.ref-grid img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  filter: grayscale(0.25);
-}
-
-.ref-grid a:hover img {
-  filter: none;
-}
-
-.ref-grid span {
-  font-size: 0.92rem;
+.quotes footer span {
+  color: var(--faint);
+  font-size: 0.88rem;
 }
 
 .contact {
@@ -671,7 +662,8 @@ ol {
   .study-grid,
   .contact-grid,
   .work-list,
-  .skill-groups {
+  .skill-groups,
+  .quotes {
     grid-template-columns: 1fr;
   }
 
@@ -690,9 +682,6 @@ ol {
     gap: 0.45rem;
   }
 
-  .ref-grid li {
-    width: calc(33.333% - 0.75rem);
-  }
 }
 
 @media (max-width: 560px) {
@@ -702,10 +691,6 @@ ol {
 
   .hero h1 {
     font-size: 2.7rem;
-  }
-
-  .ref-grid li {
-    width: calc(50% - 0.5rem);
   }
 
   .contact-list li {
