@@ -123,8 +123,8 @@ ol {
 
 .kicker span {
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
-  color: var(--faint);
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--accent) 70%, var(--ink));
 }
 
 .section-head {
@@ -274,19 +274,21 @@ ol {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3.1rem, 8vw, 6rem);
-  line-height: 0.9;
+  font-size: clamp(2.55rem, 6.4vw, 5rem);
+  line-height: 0.94;
 }
 
 .hero .given {
   display: block;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .hero .family {
   display: block;
   font-weight: 600;
   color: color-mix(in srgb, var(--ink) 78%, var(--accent));
+  white-space: nowrap;
 }
 
 .lede {
@@ -449,28 +451,18 @@ ol {
 
 .work-card--lead {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 0.4rem 2rem;
-  padding: 1.7rem 1.7rem 1.5rem;
+  padding: 1.85rem 1.8rem 1.6rem;
   background:
-    linear-gradient(135deg, rgba(232, 193, 90, 0.1), transparent 42%),
+    linear-gradient(135deg, rgba(232, 193, 90, 0.12), transparent 46%),
     var(--bg-card);
 }
 
-.work-card--lead h3,
-.work-card--lead .work-meta {
-  grid-column: 1;
+.work-card--lead h3 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
 }
 
 .work-card--lead p:not(.work-meta):not(.project-links):not(.tech) {
-  grid-column: 2;
-  grid-row: 1 / span 3;
-  align-self: center;
-}
-
-.work-card--lead .project-links {
-  grid-column: 1;
+  max-width: 42rem;
 }
 
 .work-card h3 {
@@ -788,17 +780,8 @@ ol {
   .contact-grid,
   .work-list,
   .skill-groups,
-  .quotes,
-  .work-card--lead {
+  .quotes {
     grid-template-columns: 1fr;
-  }
-
-  .work-card--lead h3,
-  .work-card--lead .work-meta,
-  .work-card--lead p:not(.work-meta):not(.project-links):not(.tech),
-  .work-card--lead .project-links {
-    grid-column: 1;
-    grid-row: auto;
   }
 
   .hero-portrait {
@@ -826,7 +809,7 @@ ol {
   }
 
   .hero h1 {
-    font-size: 2.75rem;
+    font-size: 2.35rem;
   }
 
   .contact-list li {
