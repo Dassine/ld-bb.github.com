@@ -293,15 +293,9 @@ ol {
 }
 
 .eyebrow {
-  display: inline-flex;
-  margin-bottom: 1.15rem;
-  padding: 0.32rem 0.75rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  margin: 0 0 1.05rem;
   color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  font-size: 0.95rem;
 }
 
 .hero h1 {
