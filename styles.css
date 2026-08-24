@@ -168,7 +168,6 @@ ol {
   font-family: var(--sans);
   font-size: 0.84rem;
   font-weight: 550;
-  letter-spacing: 0.06em;
   text-decoration: none;
 }
 
@@ -180,9 +179,37 @@ ol {
   border-radius: 50%;
 }
 
-.wordmark .mark {
-  color: var(--accent);
-  font-weight: 650;
+.wordmark-lockup {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wordmark-brand {
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+}
+
+.wordmark-rest {
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.wordmark .mark-dash {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.5px;
+  margin: 0 0.18em;
+  background: var(--accent);
+}
+
+.wordmark .mark-dot {
+  display: inline-block;
+  width: 0.32em;
+  height: 0.32em;
+  margin: 0 0.48em;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .nav {
