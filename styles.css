@@ -388,9 +388,9 @@ ol {
 .hero-portrait::before {
   content: "";
   position: absolute;
-  inset: -0.55rem;
-  border: 1.5px solid var(--accent);
-  border-radius: 50%;
+  inset: -0.7rem -1rem 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-radius: 999px;
   pointer-events: none;
 }
 
