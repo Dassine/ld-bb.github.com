@@ -139,6 +139,12 @@ ol {
   font-size: clamp(1.9rem, 3.6vw, 2.85rem);
 }
 
+.accent-run {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 480;
+}
+
 /* Header */
 
 .site-header {
