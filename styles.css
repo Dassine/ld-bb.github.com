@@ -829,9 +829,51 @@ ol {
   }
 }
 
+/* Scroll reveal */
+
+.js-reveal [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 2.4rem, 0);
+  transition:
+    opacity 0.8s var(--ease),
+    transform 0.8s var(--ease);
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.js-reveal [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.js-reveal [data-reveal][data-delay="1"] {
+  --reveal-delay: 0.1s;
+}
+
+.js-reveal [data-reveal][data-delay="2"] {
+  --reveal-delay: 0.2s;
+}
+
+.js-reveal [data-reveal][data-delay="3"] {
+  --reveal-delay: 0.3s;
+}
+
+.js-reveal [data-reveal][data-delay="4"] {
+  --reveal-delay: 0.4s;
+}
+
+.js-reveal .work-card[data-reveal].is-in:hover {
+  transform: translateY(-2px);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .js-reveal [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .btn,
