@@ -180,9 +180,20 @@ ol {
   border-radius: 50%;
 }
 
-.wordmark .mark {
+.wordmark .mark-dash {
   color: var(--accent);
-  font-weight: 650;
+  letter-spacing: 0;
+  padding: 0 0.02em;
+}
+
+.wordmark .mark-dot {
+  display: inline-block;
+  width: 0.38em;
+  height: 0.38em;
+  margin: 0 0.5em;
+  border-radius: 50%;
+  background: var(--accent);
+  vertical-align: 0.12em;
 }
 
 .nav {
