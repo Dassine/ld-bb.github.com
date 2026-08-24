@@ -135,6 +135,7 @@ ol {
 .section-head h2,
 .section-label h2,
 .study h2,
+.volunteer h2,
 .contact h2 {
   font-size: clamp(1.9rem, 3.6vw, 2.85rem);
 }
@@ -419,6 +420,7 @@ ol {
 .experience,
 .skills,
 .study,
+.volunteer,
 .refs,
 .contact {
   padding: 5rem 0;
@@ -575,6 +577,18 @@ ol {
 }
 
 .role-body p,
+.role-body details {
+  color: var(--muted);
+}
+
+.role-body a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.role-body a:hover {
+  text-decoration: underline;
+}
 .role-body li {
   color: var(--muted);
 }
