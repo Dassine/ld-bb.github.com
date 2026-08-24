@@ -49,4 +49,22 @@
 
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion) {
+    const nodes = document.querySelectorAll("[data-reveal]");
+    if (nodes.length) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-in");
+            observer.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+      );
+      nodes.forEach((el) => observer.observe(el));
+    }
+  }
 })();
