@@ -305,7 +305,7 @@ ol {
   display: block;
   font-style: italic;
   font-weight: 480;
-  color: var(--ink);
+  color: color-mix(in srgb, var(--ink) 70%, var(--accent));
   white-space: nowrap;
 }
 
