@@ -619,19 +619,34 @@ ol {
 }
 
 .skill-groups ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .skill-groups li {
-  padding: 0.28rem 0.65rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  position: relative;
+  padding: 0.62rem 0 0.62rem 0.95rem;
+  border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.skill-groups li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.skill-groups li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 50%;
+  background: var(--faint);
 }
 
 /* Education / refs / contact */
