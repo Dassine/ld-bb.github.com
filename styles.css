@@ -9,7 +9,7 @@
   --accent: #e8c15a;
   --accent-deep: #c9a247;
   --ink-on-accent: #1a1408;
-  --display: "Syne", "Avenir Next", "Segoe UI", sans-serif;
+  --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
   --wrap: min(1120px, calc(100% - 2.5rem));
   --header: 4.1rem;
@@ -66,10 +66,10 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: var(--display);
-  font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.08;
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
 }
 
 p,
@@ -164,11 +164,11 @@ ol {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 0.7rem;
-  font-family: var(--display);
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  gap: 0.65rem;
+  font-family: var(--sans);
+  font-size: 0.84rem;
+  font-weight: 550;
+  letter-spacing: 0.06em;
   text-decoration: none;
 }
 
@@ -177,7 +177,7 @@ ol {
   height: 1.85rem;
   object-fit: cover;
   object-position: 50% 42%;
-  border-radius: 0.45rem;
+  border-radius: 50%;
 }
 
 .nav {
@@ -242,9 +242,9 @@ ol {
   color: var(--ink);
   text-decoration: none;
   font-size: 1.12rem;
-  font-family: var(--display);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-family: var(--sans);
+  font-weight: 450;
+  letter-spacing: 0;
 }
 
 /* Hero */
@@ -274,20 +274,22 @@ ol {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.55rem, 6.4vw, 5rem);
-  line-height: 0.94;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 0.92;
+  font-weight: 560;
 }
 
 .hero .given {
   display: block;
-  font-weight: 800;
+  font-weight: 560;
   white-space: nowrap;
 }
 
 .hero .family {
   display: block;
-  font-weight: 600;
-  color: color-mix(in srgb, var(--ink) 78%, var(--accent));
+  font-style: italic;
+  font-weight: 480;
+  color: color-mix(in srgb, var(--ink) 70%, var(--accent));
   white-space: nowrap;
 }
 
@@ -364,30 +366,27 @@ ol {
   position: relative;
   margin: 0;
   justify-self: end;
-  width: min(100%, 340px);
+  width: min(100%, 300px);
 }
 
 .hero-portrait::before {
   content: "";
   position: absolute;
-  inset: 12% -8% -12% 12%;
-  border-radius: 40% 48% 42% 50%;
-  background: radial-gradient(circle at 50% 40%, rgba(232, 193, 90, 0.42), transparent 68%);
-  filter: blur(18px);
-  z-index: 0;
+  inset: -0.7rem -1rem 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  border-radius: 999px;
   pointer-events: none;
 }
 
 .portrait-frame {
   position: relative;
-  z-index: 1;
   overflow: hidden;
   aspect-ratio: 1;
-  border-radius: 1.75rem;
+  border-radius: 50%;
   background: #1a1410;
   box-shadow:
-    0 24px 60px rgba(0, 0, 0, 0.38),
-    inset 0 0 0 1px rgba(244, 239, 230, 0.08);
+    0 18px 50px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px rgba(246, 239, 230, 0.08);
 }
 
 .portrait-frame img {
@@ -722,9 +721,9 @@ ol {
 
 .contact-list a {
   font-size: 1.35rem;
-  font-family: var(--display);
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  font-family: var(--serif);
+  font-weight: 560;
+  letter-spacing: -0.02em;
   text-decoration: none;
 }
 
@@ -809,7 +808,13 @@ ol {
   }
 
   .hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.7rem;
+  }
+
+  .wordmark {
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    gap: 0.5rem;
   }
 
   .contact-list li {
