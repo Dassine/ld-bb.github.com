@@ -32,8 +32,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(1200px 520px at 85% -10%, rgba(231, 145, 10, 0.18), transparent 55%),
-    radial-gradient(900px 420px at 0% 12%, rgba(231, 145, 10, 0.05), transparent 50%),
+    radial-gradient(1200px 520px at 85% -10%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 55%),
+    radial-gradient(900px 420px at 0% 12%, color-mix(in srgb, var(--accent) 5%, transparent), transparent 50%),
     var(--bg);
   color: var(--ink);
   font-family: var(--sans);
@@ -177,6 +177,7 @@ ol {
   object-fit: cover;
   object-position: 50% 42%;
   border-radius: 50%;
+  background: var(--accent);
 }
 
 .wordmark-lockup {
@@ -298,7 +299,7 @@ ol {
   display: block;
   font-style: italic;
   font-weight: 480;
-  color: color-mix(in srgb, var(--ink) 70%, var(--accent));
+  color: var(--ink);
   white-space: nowrap;
 }
 
@@ -381,9 +382,9 @@ ol {
 .hero-portrait::before {
   content: "";
   position: absolute;
-  inset: -0.7rem -1rem 0.85rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
-  border-radius: 999px;
+  inset: -0.55rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
   pointer-events: none;
 }
 
@@ -461,7 +462,7 @@ ol {
   grid-column: 1 / -1;
   padding: 1.85rem 1.8rem 1.6rem;
   background:
-    linear-gradient(135deg, rgba(231, 145, 10, 0.14), transparent 46%),
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 46%),
     var(--bg-card);
 }
 
@@ -699,7 +700,7 @@ ol {
 
 .contact {
   background:
-    linear-gradient(180deg, rgba(231, 145, 10, 0.08), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 42%),
     var(--bg-soft);
 }
 
