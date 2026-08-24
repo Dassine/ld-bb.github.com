@@ -181,35 +181,18 @@ ol {
 
 .wordmark-lockup {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
+  gap: 0.45em;
 }
 
 .wordmark-brand {
-  display: inline-flex;
-  align-items: center;
   letter-spacing: 0.08em;
+  color: var(--ink);
 }
 
 .wordmark-rest {
   letter-spacing: 0.1em;
-  color: var(--muted);
-}
-
-.wordmark .mark-dash {
-  display: inline-block;
-  width: 0.55em;
-  height: 1.5px;
-  margin: 0 0.18em;
-  background: var(--accent);
-}
-
-.wordmark .mark-dot {
-  display: inline-block;
-  width: 0.32em;
-  height: 0.32em;
-  margin: 0 0.48em;
-  border-radius: 50%;
-  background: var(--accent);
+  color: var(--accent);
 }
 
 .nav {
